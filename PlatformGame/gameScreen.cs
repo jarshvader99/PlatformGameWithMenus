@@ -29,12 +29,13 @@ namespace PlatformGame
         int force = 8; // force of the jump in an integer
         int score = 0; // default score integer set to 0
 
-        readonly int playSpeed = 18; //this integer will set players speed to 18
-        readonly int backLeft = 8; // this integer will set the background moving speed to 8
+        int playSpeed = 20; //this integer will set players speed to 18
+        int backLeft = 8; // this integer will set the background moving speed to 8
 
         public gameScreen()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
         private void mainGameTimer(object sender, EventArgs e)
         {
@@ -44,6 +45,7 @@ namespace PlatformGame
 
             // refresh the player picture box consistently
             player.Refresh();
+            platform.Refresh();
 
             scoreText.Text = "Score: " + score;
 
@@ -153,8 +155,6 @@ namespace PlatformGame
                         coinGrab.Play();
                         this.Controls.Remove(x); // then we are going to remove the coin image
                         score++; // add 1 to the score
-                                 // show the score on the score text label
-                        score++;
                     }
                 }
 
@@ -255,6 +255,11 @@ namespace PlatformGame
                 // then we set jumping to true
                 jumping = true;
             }
+
+            if (e.KeyCode == Keys.R)
+            {
+                Application.Restart();
+            }
         }
 
         private void keyisup(object sender, KeyEventArgs e)
@@ -275,6 +280,8 @@ namespace PlatformGame
             {
                 jumping = false;
             }
+
+            
         }
 
         private void SideScrollerPFG_Load(object sender, EventArgs e)

@@ -16,5 +16,10 @@ namespace PlatformGame
         {
             InitializeComponent();
         }
+
+        private void mainMenu(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

@@ -43,7 +43,6 @@ namespace PlatformGame
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -51,11 +50,13 @@ namespace PlatformGame
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.key)).BeginInit();
@@ -67,7 +68,6 @@ namespace PlatformGame
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -75,11 +75,13 @@ namespace PlatformGame
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.SuspendLayout();
             // 
             // scoreText
@@ -105,7 +107,7 @@ namespace PlatformGame
             // 
             this.enemy.BackgroundImage = global::PlatformGame.Properties.Resources.player_willa_sm;
             this.enemy.Image = global::PlatformGame.Properties.Resources.player_willa_sm;
-            this.enemy.Location = new System.Drawing.Point(337, 598);
+            this.enemy.Location = new System.Drawing.Point(464, 600);
             this.enemy.Name = "enemy";
             this.enemy.Size = new System.Drawing.Size(80, 85);
             this.enemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -129,10 +131,10 @@ namespace PlatformGame
             // 
             this.key.BackgroundImage = global::PlatformGame.Properties.Resources.key;
             this.key.Image = global::PlatformGame.Properties.Resources.key;
-            this.key.Location = new System.Drawing.Point(794, 299);
+            this.key.Location = new System.Drawing.Point(1065, 438);
             this.key.Name = "key";
-            this.key.Size = new System.Drawing.Size(90, 47);
-            this.key.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.key.Size = new System.Drawing.Size(54, 33);
+            this.key.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.key.TabIndex = 3;
             this.key.TabStop = false;
             this.key.Tag = "key";
@@ -153,7 +155,7 @@ namespace PlatformGame
             // 
             this.player.BackgroundImage = global::PlatformGame.Properties.Resources.player_josh_sm;
             this.player.Image = global::PlatformGame.Properties.Resources.player_josh_sm;
-            this.player.Location = new System.Drawing.Point(12, 598);
+            this.player.Location = new System.Drawing.Point(12, 600);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(80, 85);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -165,7 +167,7 @@ namespace PlatformGame
             // 
             this.platform.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
             this.platform.Image = global::PlatformGame.Properties.Resources.platform;
-            this.platform.Location = new System.Drawing.Point(-5, 680);
+            this.platform.Location = new System.Drawing.Point(0, 682);
             this.platform.Name = "platform";
             this.platform.Size = new System.Drawing.Size(5000, 50);
             this.platform.TabIndex = 0;
@@ -176,7 +178,7 @@ namespace PlatformGame
             // 
             this.background.BackgroundImage = global::PlatformGame.Properties.Resources.scene1_sm;
             this.background.Image = global::PlatformGame.Properties.Resources.scene1_sm;
-            this.background.Location = new System.Drawing.Point(-5, -4);
+            this.background.Location = new System.Drawing.Point(0, 0);
             this.background.Name = "background";
             this.background.Size = new System.Drawing.Size(5000, 1054);
             this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -188,7 +190,7 @@ namespace PlatformGame
             // 
             this.pictureBox1.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
             this.pictureBox1.Image = global::PlatformGame.Properties.Resources.platform;
-            this.pictureBox1.Location = new System.Drawing.Point(293, 481);
+            this.pictureBox1.Location = new System.Drawing.Point(321, 325);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 8;
@@ -228,17 +230,6 @@ namespace PlatformGame
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "platform";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
-            this.pictureBox5.Image = global::PlatformGame.Properties.Resources.platform;
-            this.pictureBox5.Location = new System.Drawing.Point(44, 269);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(256, 50);
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "platform";
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
@@ -276,7 +267,7 @@ namespace PlatformGame
             // 
             this.pictureBox9.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
             this.pictureBox9.Image = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox9.Location = new System.Drawing.Point(325, 424);
+            this.pictureBox9.Location = new System.Drawing.Point(351, 264);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(35, 35);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -320,18 +311,6 @@ namespace PlatformGame
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Tag = "coin";
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox13.Image = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox13.Location = new System.Drawing.Point(221, 209);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 20;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "coin";
-            // 
             // pictureBox14
             // 
             this.pictureBox14.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
@@ -344,35 +323,11 @@ namespace PlatformGame
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "coin";
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox15.Image = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox15.Location = new System.Drawing.Point(152, 209);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 21;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "coin";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox16.Image = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox16.Location = new System.Drawing.Point(84, 209);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 22;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Tag = "coin";
-            // 
             // pictureBox17
             // 
             this.pictureBox17.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
             this.pictureBox17.Image = global::PlatformGame.Properties.Resources.coin;
-            this.pictureBox17.Location = new System.Drawing.Point(1450, 577);
+            this.pictureBox17.Location = new System.Drawing.Point(1368, 438);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(35, 35);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,16 +335,76 @@ namespace PlatformGame
             this.pictureBox17.TabStop = false;
             this.pictureBox17.Tag = "coin";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
+            this.pictureBox5.Image = global::PlatformGame.Properties.Resources.platform;
+            this.pictureBox5.Location = new System.Drawing.Point(170, 532);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "platform";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox13.Image = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox13.Location = new System.Drawing.Point(202, 460);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 25;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "coin";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::PlatformGame.Properties.Resources.platform;
+            this.pictureBox15.Image = global::PlatformGame.Properties.Resources.platform;
+            this.pictureBox15.Location = new System.Drawing.Point(1331, 501);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox15.TabIndex = 26;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "platform";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox16.Image = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox16.Location = new System.Drawing.Point(827, 299);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 27;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "coin";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackgroundImage = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox18.Image = global::PlatformGame.Properties.Resources.coin;
+            this.pictureBox18.Location = new System.Drawing.Point(1368, 600);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 28;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Tag = "coin";
+            // 
             // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 729);
-            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
@@ -397,7 +412,6 @@ namespace PlatformGame
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -429,7 +443,6 @@ namespace PlatformGame
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -437,11 +450,13 @@ namespace PlatformGame
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,7 +477,6 @@ namespace PlatformGame
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -470,10 +484,12 @@ namespace PlatformGame
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
     }
 }
